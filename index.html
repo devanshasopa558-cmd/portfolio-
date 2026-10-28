@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devansh asopa— Personal Profile</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
 </head>
 <body>
     <header class="site-header">
@@ -81,7 +82,7 @@
                     </ul>
                 </li>
                 <li data-name="reading list app" data-tech="HTML, CSS, JavaScript">
-                    <a href="https://example.com/placeholder-project-three" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/devanshasopa558-cmd/Reading-listt-app.git" target="_blank" rel="noopener noreferrer">
                         reading list app
                     </a>
                     <p>A dynamic web application designed to help users track, organize, and manage their personal reading collections. Built with a responsive interface, it allows users to log books, update reading progress, and maintain a personalized digital bookshelf with ease.</p>
@@ -93,6 +94,15 @@
                 </li>
             </ul>
         </section>
+        <section id="weather-section" class="weather-section">
+<h2>Live Weather Checker</h2>
+<p>Enter a city to check its current weather.</p>
+<div class="weather-controls">
+<input id="cityInput" type="text" placeholder="Enter city (e.g., Jaipur)" />
+<button id="weatherButton" type="button">Get Weather</button>
+</div>
+<p id="weatherResult" aria-live="polite">Enter a city and click Get Weather.</p>
+</section>
     </main>
 
     <footer class="site-footer">
@@ -102,5 +112,19 @@
 
     <script src="script.js"></script>
     <button id="themeToggle">Switch to Dark Mode</button>
+    <section id="portfolio-chatbot" class="chatbot-section">
+        <h2>Ask My Portfolio Chatbot</h2>
+        <p>Ask a question and get a response from the AI.</p>
+        <div id="chatMessages" class="chat-messages" aria-live="polite">
+        <p class="bot-message">Hello! Ask me something about this portfolio.</p>
+        </div>
+        <form id="chatForm" class="chat-form">
+        <input id="chatInput" type="text" placeholder="Type your question" required>
+        <button id="chatSend" type="submit">Send</button>
+        </form>
+        <p id="chatStatus" aria-live="polite"></p>
+        </section>
+        <script src="config.js"></script>
+        <script src="chatbot.js"></script>
 </body>
 </html>
